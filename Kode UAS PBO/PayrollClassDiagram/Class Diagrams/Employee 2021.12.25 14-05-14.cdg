@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Employee">
+  <ClassDiagramComponents>
+    <Class name="Education" package="Employee" visibility="public" xPosition="880.0" yPosition="829.0">
+      <Fields>
+        <Field name="degree" type="String" visibility="private"/>
+        <Field name="major" type="String" visibility="private"/>
+        <Field name="researches" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="d"/>
+          <Argument type="String" name="m"/>
+          <Argument type="int" name="re"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setDegree" returnType="void" visibility="public">
+          <Argument type="String" name="d"/>
+        </Method>
+        <Method name="getDegree" returnType="String" visibility="public"/>
+        <Method name="setMajor" returnType="void" visibility="public">
+          <Argument type="String" name="m"/>
+        </Method>
+        <Method name="getMajor" returnType="String" visibility="public"/>
+        <Method name="setResearches" returnType="void" visibility="public">
+          <Argument type="int" name="r"/>
+        </Method>
+        <Method name="getResearches" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="Employee" visibility="public" isAbstract="true" xPosition="1204.0" yPosition="229.0">
+      <Fields>
+        <Field name="lastName" type="String" visibility="private"/>
+        <Field name="firstName" type="String" visibility="private"/>
+        <Field name="ID_Number" type="String" visibility="private"/>
+        <Field name="sex" type="String" visibility="private"/>
+        <Field name="birthDate" type="Calendar" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="ln"/>
+          <Argument type="String" name="fn"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="s"/>
+          <Argument type="int" name="month"/>
+          <Argument type="int" name="date"/>
+          <Argument type="int" name="year"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setLastName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getLastName" returnType="String" visibility="public"/>
+        <Method name="setFirstName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getFirstName" returnType="String" visibility="public"/>
+        <Method name="setID_Number" returnType="void" visibility="public">
+          <Argument type="String" name="number"/>
+        </Method>
+        <Method name="getID_Number" returnType="String" visibility="public"/>
+        <Method name="setSex" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+        <Method name="getSex" returnType="String" visibility="public"/>
+        <Method name="setBirthDate" returnType="void" visibility="public">
+          <Argument type="int" name="month"/>
+          <Argument type="int" name="date"/>
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="getBirthDay" returnType="int" visibility="public"/>
+        <Method name="getBirthMonth" returnType="int" visibility="public"/>
+        <Method name="getBirthYear" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="monthlyEarning" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Employee" name="c"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Faculty" package="Employee" visibility="public" xPosition="1375.0" yPosition="906.0">
+      <Fields>
+        <Field name="edu" type="Education" visibility="private"/>
+        <Field name="rank" type="levels" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="ln"/>
+          <Argument type="String" name="fn"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="sex"/>
+          <Argument type="int" name="month"/>
+          <Argument type="int" name="date"/>
+          <Argument type="int" name="year"/>
+          <Argument type="String" name="d"/>
+          <Argument type="String" name="m"/>
+          <Argument type="int" name="re"/>
+          <Argument type="levels" name="ra"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setLevel" returnType="void" visibility="public">
+          <Argument type="levels" name="level"/>
+        </Method>
+        <Method name="getLevel" returnType="levels" visibility="public"/>
+        <Method name="monthlyEarning" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="setEducation" returnType="void" visibility="private">
+          <Argument type="Education" name="obj"/>
+        </Method>
+        <Method name="Clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="nameCompare" package="Employee" visibility="public" xPosition="905.0" yPosition="686.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="compare" returnType="int" visibility="public">
+          <Argument type="Employee" name="o1"/>
+          <Argument type="Employee" name="o2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PartTime" package="Employee" visibility="public" xPosition="269.0" yPosition="730.0">
+      <Fields>
+        <Field name="weeklyHoursWorked" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="ln"/>
+          <Argument type="String" name="fn"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="sex"/>
+          <Argument type="int" name="month"/>
+          <Argument type="int" name="date"/>
+          <Argument type="int" name="year"/>
+          <Argument type="int" name="rate"/>
+          <Argument type="int" name="hWorked"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setWeeklyHoursWorked" returnType="void" visibility="public">
+          <Argument type="int" name="h"/>
+        </Method>
+        <Method name="getWeeklyHoursWorked" returnType="int" visibility="public"/>
+        <Method name="monthlyEarning" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Staff" package="Employee" visibility="public" xPosition="488.0" yPosition="438.0">
+      <Fields>
+        <Field name="hourlyRate" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="ln"/>
+          <Argument type="String" name="fn"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="sex"/>
+          <Argument type="int" name="month"/>
+          <Argument type="int" name="date"/>
+          <Argument type="int" name="year"/>
+          <Argument type="int" name="rate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setHourlyRate" returnType="void" visibility="public">
+          <Argument type="double" name="rate"/>
+        </Method>
+        <Method name="getHourlyRate" returnType="double" visibility="public"/>
+        <Method name="monthlyEarning" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestProgram" package="Employee" visibility="public" xPosition="865.0" yPosition="258.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="EmployeeInfo" package="Employee" visibility="public" xPosition="1774.0" yPosition="481.0">
+      <Methods/>
+    </Interface>
+    <Enum name="levels" package="Employee" visibility="public" xPosition="1946.0" yPosition="686.0">
+      <Literals>
+        <Literal name="AS"/>
+        <Literal name="AO"/>
+        <Literal name="FU"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Employee.Faculty" target="Employee.Employee"/>
+    <HasRelation name="edu" source="Employee.Faculty" target="Employee.Education" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Employee.nameCompare" target="Employee.Employee" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Employee.PartTime" target="Employee.Staff"/>
+    <UseRelation source="Employee.Faculty" target="Employee.Education" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Employee.Faculty" target="Employee.levels" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Employee.Employee" target="Employee.Employee" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Employee.Staff" target="Employee.Employee"/>
+    <HasRelation name="rank" source="Employee.Faculty" target="Employee.levels" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Employee.Employee" target="Employee.EmployeeInfo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Employee.Faculty" target="Employee.EmployeeInfo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

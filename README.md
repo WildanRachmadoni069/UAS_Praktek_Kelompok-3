@@ -1,12 +1,13 @@
-# UAS Praktek_Kelompok-3
-Nama Anggota Kelompok 3 :
+# UAS PEMROGRAMAN BERORIENTASI OBJECT
+S1 SISTEM INFORMASI JTIF FT UNESA
+
+# Nama Anggota Kelompok 3 :
 1.	Yonathan Setiagita (20051214009)
 2.	Wildan Rachmadoni (20051214069)
 3.	Muhammad Reayhan Rahmansyah (20051214103)
 4.	Dimas Prananda (20051214105)
 
-
-Output Program :
+# Output Program :
 
 ![Hasil Part 1](https://user-images.githubusercontent.com/92255509/147387091-3712b9e0-b5aa-4450-b587-0b0d87102e05.jpg)
 ![Hasil Part 2](https://user-images.githubusercontent.com/92255509/147387115-c7394225-415c-45bb-8487-b1b59fc3bec1.jpg)

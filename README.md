@@ -1,4 +1,4 @@
-# UAS_Praktek_Kelompok-3
+# UAS Praktek_Kelompok-3
 Nama Anggota Kelompok 3 :
 1.	Yonathan Setiagita (20051214009)
 2.	Wildan Rachmadoni (20051214069)

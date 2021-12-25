@@ -6,6 +6,7 @@ Nama Anggota Kelompok 3 :
 4.	Dimas Prananda (20051214105)
 
 
+Output Program
 ![Hasil Part 1](https://user-images.githubusercontent.com/92255509/147387091-3712b9e0-b5aa-4450-b587-0b0d87102e05.jpg)
 ![Hasil Part 2](https://user-images.githubusercontent.com/92255509/147387115-c7394225-415c-45bb-8487-b1b59fc3bec1.jpg)
 ![Hasil Part 3](https://user-images.githubusercontent.com/92255509/147387117-d15af83e-1e4d-4906-b413-f77fda34b27f.jpg)
